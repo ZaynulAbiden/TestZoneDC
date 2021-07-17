@@ -745,23 +745,42 @@ width: 100%;
 @media screen and (max-width: 500px) {
     .counterBox{
         padding: 2px 2px;
-        margin: 10px;
+        margin: 5px;
         margin-top:20px;
         margin-bottom:20px;
         width: 100px;
         border:5px rgb(62, 19, 255) outset;
-        font-size: 10px;
+        font-size: 7px;
     }
     
     .counterIcon {
-        font-size:15px;
+        font-size:10px;
     }
 
     .counter{
         font-size: 10px;
         font-weight: bold;
     }
+
+    .counterContainer{
+        width: 100%;
+            background-attachment: fixed;
+            background-size: 100% 100%; 
+        }
 }
+
+
+@media screen and (max-width: 360px) {
+    .counterBox{
+        padding: 2px 2px;
+        margin: 20px 2px 20px 2px;
+        border:2px rgb(62, 19, 255) outset;
+    }
+
+    .counterContainer{   
+            background-size: cover;
+        }
+    }
 
 
 /* ===================================== Our Blog CSS ================================== */
@@ -1107,13 +1126,51 @@ transform: scale(1.05);
 /* ---------------------------COVID NEWS------------------------ */
 
 .covidSection{
-
 color: whitesmoke;
 background-color: #08081f;
 padding-top: 30px;
 padding-bottom: 30px;
 padding-left: 30px;
 }
+
+ 
+@media screen and (max-width: 700px) {
+    .covidSection {
+        color: greenyellow;
+        padding-top: 130px;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .blankColor{
+        /* background-image:linear-gradient(rgb(166, 252, 255),#08081f); */
+        display: none;
+    }
+    .covidSection .covidGIF2{
+        padding-top:30px;
+        left:0;
+    }
+
+    .covidSection .covidText{
+        width: 100%;
+    }
+}
+ 
+
+.blankColor{
+    /* background-image:linear-gradient(rgb(166, 252, 255),#08081f); */
+    background-color:#08081f;
+    padding-top: 150px;
+}
+
+
+
+
+
+
+
+
+
 
 .blankColor{
     /* background-image:linear-gradient(rgb(166, 252, 255),#08081f); */
@@ -1138,8 +1195,6 @@ padding-left: 30px;
     width:45%;
     position: fixed;
 }
-
-
 
 
 
@@ -1310,11 +1365,19 @@ padding-left: 30px;
 .blog-grid .blog-info {
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
   border-radius: 5px;
-  background: #ffffff;
-  padding: 20px;
-  margin: -30px 20px 0;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: -30px 2px 0;
   position: relative;
+  text-align: center;
+  transition: background-color 2s linear;
 }
+.blog-grid .blog-info:hover{
+    background-color:rgb(230, 253, 255);
+    transform: scale(1.02);
+    transition:transform 0.1s linear;
+}
+
 .blog-grid .blog-info h5 {
   font-size: 22px;
   font-weight: 500;
@@ -1340,8 +1403,8 @@ padding-left: 30px;
     -o-transition: ease all 0.3s;
     -webkit-transition: ease all 0.3s;
     transition: ease all 0.3s;
+    transition: padding 1s linear;
 }
-
 
 .px-btn-arrow .arrow {
     width: 13px;
@@ -1357,6 +1420,12 @@ padding-left: 30px;
     -o-transition: ease right 0.3s;
     -webkit-transition: ease right 0.3s;
     transition: ease right 0.3s;
+}
+
+.px-btn-arrow:hover {
+    
+    transform: translate(10%, 0);
+    transition: transform 0.2s linear;
 }
 
 .px-btn-arrow .arrow:after {
