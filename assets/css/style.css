@@ -1,16 +1,12 @@
 /* ===================================== Import Less ================================== */
-
-
 @font-face {
     font-family: 'mouse-300';
     src: url("../fonts/PT_Sans-Web-Regular.ttf") format("truetype");
 }
-
 @font-face {
     font-family: 'mouse-500';
     src: url("../fonts/PT_Sans-Web-Bold.ttf") format("truetype");
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
@@ -190,6 +186,7 @@ body {
     background-color: #00a8df;
     border-color: #00a8df;
 }
+
 
 .btn-info:hover {
     background-color: #00a8df !important;
@@ -384,6 +381,65 @@ header .scroll-to-fixed-fixed {
     font-size: 32px;
     margin-top: 17px;
     margin-right: 12px;
+}
+
+/*------------------ Top Bar Menu Content-----------------*/
+
+
+/* Download Button CSS */
+
+.dwnldbtn {
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 3px 40px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 1500ms infinite;
+    margin-left: 14.2vw;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: red;
+        box-shadow: 0 0 3px red;
+    }
+    50% {
+        background-color: rgb(255, 110, 110);
+        box-shadow: 0 0 25px rgb(233, 110, 110);
+    }
+    100% {
+        background-color: red;
+        box-shadow: 0 0 3px red;
+    }
+}
+
+.moreDetails{
+    padding:10px;
+    color:rgb(94, 94, 94);
+    width: 100%;
+    text-align: center;
+    animation: glowingText 2000ms infinite;
+}
+
+@keyframes glowingText {
+    0% {
+        color: grey;
+        text-shadow: 0 0 3px grey;
+    }
+    50% {
+        color: black;
+        text-shadow: 0 0 5px black;
+    }
+    100% {
+        color: black;
+        text-shadow: 0 0 3px grey;
+    }
 }
 
 
@@ -788,8 +844,6 @@ width: 100%;
 .our-blog {
     background-color: #FDFDFD;
     padding: 40px;
-
-
 }
 
 @media screen and (max-width: 967px) {
@@ -808,6 +862,7 @@ width: 100%;
  cursor: pointer;
  background-color: rgb(230, 230, 230);
 transform: scale(1.05);
+transition: transform 0.2s linear;
   
 }
 
@@ -907,7 +962,8 @@ transform: scale(1.05);
 .page-nav {
     padding: 40px;
     text-align: center;
-    padding-top: 170px;
+    padding-top: 200px;
+    
 }
 
 @media screen and (max-width: 409px) {
@@ -1064,64 +1120,6 @@ transform: scale(1.05);
 /*# sourceMappingURL=style.css.map */
 
 
-/*------------------ Top Bar Menu Content-----------------*/
-
-
-/* Download Button CSS */
-
-.dwnldbtn {
-    border-radius: 10px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Arial;
-    font-size: 13px;
-    font-weight: bolder;
-    padding: 3px 40px;
-    text-align: center;
-    text-decoration: none;
-    animation: glowing 1500ms infinite;
-    margin-left: 14.2vw;
-}
-
-@keyframes glowing {
-    0% {
-        background-color: red;
-        box-shadow: 0 0 3px red;
-    }
-    50% {
-        background-color: rgb(255, 110, 110);
-        box-shadow: 0 0 25px rgb(233, 110, 110);
-    }
-    100% {
-        background-color: red;
-        box-shadow: 0 0 3px red;
-    }
-}
-
-.moreDetails{
-    padding:10px;
-    color:rgb(94, 94, 94);
-    width: 100%;
-    text-align: center;
-    animation: glowingText 2000ms infinite;
-}
-
-@keyframes glowingText {
-    0% {
-        color: grey;
-        text-shadow: 0 0 3px grey;
-    }
-    50% {
-        color: black;
-        text-shadow: 0 0 5px black;
-    }
-    100% {
-        color: black;
-        text-shadow: 0 0 3px grey;
-    }
-}
 
 /* ---------------------------COVID NEWS------------------------ */
 
@@ -1156,21 +1154,11 @@ padding-left: 30px;
     }
 }
  
-
 .blankColor{
     /* background-image:linear-gradient(rgb(166, 252, 255),#08081f); */
     background-color:#08081f;
     padding-top: 150px;
 }
-
-
-
-
-
-
-
-
-
 
 .blankColor{
     /* background-image:linear-gradient(rgb(166, 252, 255),#08081f); */
@@ -1324,13 +1312,6 @@ padding-left: 30px;
     margin: 0px;
     font-family:'Times New Roman', Times, serif;
 }
-.parallaxImageTeam{
-    /* background-image: url(../images/banners/banner-14.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%; */
-    background-color: #000000;
-}
 
 /* --------------------------------Latest News--------------------------------- */
 
@@ -1444,3 +1425,93 @@ padding-left: 30px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+
+
+
+/* ABOUT US PAGE==============================> */
+
+/* -----------------CEO Message-----------------  */
+
+.with-medical .container .row {
+    color:black;
+    font-family: 'Bree Serif', serif;
+    margin-top:100px;
+}
+.with-medical .container .row img{
+    background-color: #acacac;
+    color:white;
+    border:2px black inset;
+}
+
+.branchesDIV{
+    padding-top:20px;padding-bottom:20px;
+    margin-top: 20px;margin-bottom: 20px;
+    background-color: black;
+    text-align: center;  
+    font-size: 3vw;
+    font-family:'Bree Serif', serif;
+    color: white;
+    text-shadow: white 1px 1px;
+    animation: colorChange 5s infinite; 
+}
+.btn-info2 {
+    background-color: #13c4ff;
+    color: white;
+    font-size:20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+@keyframes colorChange {
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: rgb(49, 49, 49);
+    }
+    100%{
+        background-color: black;
+    }
+    
+}
+/* 
+.branchesDIV a{
+margin-top: 50px;
+background-color: white;
+padding:10px 100px 10px 100px;
+font-weight: bold;
+border: ridge;
+cursor: pointer;
+} */
+
+
+
+
+/* -----------------Why Test Zone-----------------  */
+.whyTZDC{
+    padding:150px 0 50px 50px;
+    color:white;
+    text-shadow: #000000 1px 1px 1px;
+    background-image: linear-gradient(45deg,blue,white);
+    font-family: 'Bree Serif', serif;
+    font-size:50px;
+}
+
+.whyTZDC h5{
+    padding:30px 0px 0px 20px;
+    font-size:25px;
+}
+.whyTZDC p{
+    padding:0px 0px 0px 25px;
+    font-size:20px;
+}
+.tick{
+    margin: 0.5vw;
+    padding:0.2vw;
+    border:1px solid aqua;
+    border-radius: 3px;
+    background-color:aqua;
+}
+
